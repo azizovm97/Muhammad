@@ -73,3 +73,26 @@ function makeBananaSmoothie(
     */
 }
 makeBananaSmoothie(150, 80, 1, 1, 5, "Bon Appetit!");
+
+/* INGREDIENTS FOR Mahito: 
+1)Свежая мята 10 г 
+2)Лайм ½ штуки 
+3)Спрайт 150 мл 
+4)Лед 8 кусков 
+5)Тростниковый сахар 1 чайная ложка 
+*/ 
+function makeMohito(
+    int $laym,
+    int $mint, 
+    int $ice, 
+    int $sprite, 
+    int $sugar,) 
+   { 
+   echo " 
+   1)Нарезаем лайм $laym  и кладем в бокал. <br> 
+   2)Добавляем мяту $mint, тростниковый сахар $sugar и разминаем <br> 
+   3)Добавляем ледяную крошку $ice и перекладываем смесь в шейкер. Взбиваем<br> 
+   4)Перекладываем в бокал и заливаем спрайтом $sprite.<br> 
+   5)Декорируем коктейль листиком мяты $mint и лаймом $laym — напиток готов.<br> "
+   ; } 
+makeMohito(150, 80, 1, 1, 5, "Bon Appetit!");
