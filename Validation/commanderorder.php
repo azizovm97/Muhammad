@@ -1,21 +1,21 @@
 <?php
 
-//Verification for number  in a text
+
 function validateNumber($order) {
-    if(ctype_digit($order)) {
+    if(is_string($order)) {
       return "Error you wrote a number"; 
     }
     
 }
 
-//Verification for Minimum words
+
 function validateMin($order, $min_words){
     if(strlen($order) <= $min_words){
         return "You wrote very few command";
     }
 }
 
-//Verifation for Maximum words
+
 function validateMax($order, $max_words){
     if(strlen($order) >= $max_words){
         return "You wrote much words";
@@ -36,5 +36,3 @@ function commanderOrder($order) {
 // Business logic
 $order = readline("Give your order, captain! ");
 echo commanderOrder($order) ;
-
-ch
