@@ -53,7 +53,7 @@ function orderFish(string $fish_name, string $fish_count)
     ];
     $type_validate_str = validateStr($fish_name);
     $type_validate_int = validateInt($fish_count);
-    $min_validate      = validateMin($fish_name, 3);
+    $min_validate      = validateMin($fish_name, 4);
     $max_validate      = validateMax($fish_name, 10);
     $list_search       = searchInList($fish_name, $fishes_list);
     return "$type_validate_str $type_validate_int $min_validate $max_validate $list_search";
