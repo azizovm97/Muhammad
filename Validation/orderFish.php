@@ -42,9 +42,6 @@ function searchInList(string $fish_name, array $fishes_list)
 
 function orderFish(string $fish_name, string $fish_count)
 {
-    //Проверить типы данных
-    //Длина команды минимум и максимум
-    //Находится для в наборе уже существующих рыб в океане 
     $fishes_list = [
         "mackerel",
         "trout",
