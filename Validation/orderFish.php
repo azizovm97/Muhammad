@@ -15,15 +15,15 @@ function validateInt($fish_count)
 }
 
 
-function checkingMax(string $fish_name)
+function validateMax(string $fish_name)
 {
     $max = 10;
-    if (strlen($fish_name) >= $max) {
+    if (strlen($fish_name) > $max) {
         return "There are many characters in the name of the fish!"; 
     }
     return "The number of characters is enough!";
 }
-function checkingMin(string $fish_name)
+function validateMin(string $fish_name)
 {
     $min = 2;
     if (strlen($fish_name) < $min) {
@@ -53,12 +53,12 @@ function orderFish(string $fish_name, string $fish_count)
         "herring",
         "catfish",
     ];
-    $type_checking_str = validateStr($fish_name);
-    $type_checking_int = validateInt($fish_count);
-    $min_checking      = checkingMin($fish_name);
-    $max_checking      = checkingMax($fish_name);
+    $type_validate_str = validateStr($fish_name);
+    $type_validate_int = validateInt($fish_count);
+    $min_validate      = validateMin($fish_name);
+    $max_validate      = validateMax($fish_name);
     $list_search       = searchInList($fish_name, $fishes_list);
-    return "$type_checking_str $type_checking_int $min_checking $max_checking $list_search";
+    return "$type_validate_str $type_validate_int $min_validate $max_validate $list_search";
 }
 
 $fish_name  = readline("Enter fish name: "); 
