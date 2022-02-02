@@ -17,14 +17,14 @@ function validateInt($fish_count)
 
 function validateMax(string $fish_name,$max_value)
 {
-    if (strlen($fish_name) > $max_value) {
+    if (strlen($fish_name) >= $max_value) {
         return "There are many characters in the name of the fish!";
     }
     return "The number of characters is enough!";
 }
 function validateMin(string $fish_name, $min_value)
 {
-    if (strlen($fish_name) < $min_value) {
+    if (strlen($fish_name) <= $min_value) {
         return "There are few characters in the name of the fish!";
     }
     return "The number of characters is enough!";
